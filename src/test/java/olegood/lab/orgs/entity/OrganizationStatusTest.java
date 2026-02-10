@@ -7,13 +7,13 @@ import org.junit.jupiter.api.Test;
 
 class OrganizationStatusTest {
 
-  @DisplayName("Test that OrganizationStatus enum has 7 values")
+  @DisplayName("Enumeration has expected number of values")
   @Test
   void testStatusEnumValues() {
     assertThat(OrganizationStatus.values()).hasSize(7);
   }
 
-  @DisplayName("Test that OrganizationStatus enum values are unique")
+  @DisplayName("Enumeration values are unique")
   @Test
   void testStatusEnumValuesUnique() {
     assertThat(OrganizationStatus.values()).doesNotHaveDuplicates();
