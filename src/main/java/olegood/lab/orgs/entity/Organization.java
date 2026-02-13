@@ -9,10 +9,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Min;
 import java.time.Instant;
 import java.util.List;
-
-import jakarta.validation.constraints.Min;
 import olegood.lab.orgs.entity.enrollment.Enrollment;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
