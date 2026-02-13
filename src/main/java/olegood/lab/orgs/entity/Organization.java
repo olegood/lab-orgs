@@ -11,6 +11,9 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import java.time.Instant;
 import java.util.List;
+
+import jakarta.validation.constraints.Min;
+import olegood.lab.orgs.entity.enrollment.Enrollment;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -41,12 +44,14 @@ public class Organization {
   @Column(name = "DESCRIPTION", length = 300)
   private String description;
 
+  @Min(1970)
   @Column(name = "FOUNDED")
   private int founded;
 
   @Column(name = "INDUSTRY", length = 100, nullable = false)
   private String industry;
 
+  @Min(1)
   @Column(name = "NUMBER_OF_EMPLOYEES")
   private int numberOfEmployees;
 

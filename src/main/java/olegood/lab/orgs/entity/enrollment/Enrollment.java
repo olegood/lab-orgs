@@ -1,4 +1,4 @@
-package olegood.lab.orgs.entity;
+package olegood.lab.orgs.entity.enrollment;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -19,28 +19,13 @@ public class Enrollment {
   @Column(name = "ID")
   private Long id;
 
-  public enum Type {
-    RESELL,
-    EXPLORE,
-    CONSULT,
-    DEVELOP,
-    MAINTAIN
-  }
-
   @Enumerated(EnumType.STRING)
   @Column(name = "TYPE", nullable = false)
-  private Type type;
-
-  public enum Status {
-    ONBOARDING,
-    ACTIVE,
-    IN_TERMINATION,
-    RETIRED
-  }
+  private EnrollmentType type;
 
   @Enumerated(EnumType.STRING)
   @Column(name = "STATUS", nullable = false)
-  private Status status;
+  private EnrollmentStatus status;
 
   @OneToMany
   @JoinColumn(name = "ENROLLMENT_ID")
