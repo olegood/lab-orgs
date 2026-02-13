@@ -12,8 +12,10 @@ import java.util.List;
 import olegood.lab.orgs.entity.marker.Marker;
 
 @Entity
-@Table(name = "ENROLLMENT")
+@Table(name = Enrollment.TABLE_NAME)
 public class Enrollment {
+
+  public static final String TABLE_NAME = "ENROLLMENT";
 
   @Id
   @Column(name = "ID")

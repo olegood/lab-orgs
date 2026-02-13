@@ -13,8 +13,10 @@ import lombok.experimental.Accessors;
 @Data
 @Accessors(chain = true)
 @Entity
-@Table(name = "MARKER")
+@Table(name = Marker.TABLE_NAME)
 public class Marker {
+
+  public static final String TABLE_NAME = "MARKER";
 
   @Id
   @Column(name = "ID")
