@@ -12,11 +12,15 @@ import jakarta.persistence.Table;
 import jakarta.validation.constraints.Min;
 import java.time.Instant;
 import java.util.List;
+import lombok.Data;
+import lombok.experimental.Accessors;
 import olegood.lab.orgs.entity.enrollment.Enrollment;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
+@Data
+@Accessors(chain = true)
 @Entity
 @Table(name = Organization.TABLE_NAME)
 @EntityListeners(AuditingEntityListener.class)
