@@ -4,6 +4,14 @@ spring:
       enabled: false
     jdbc:
       initialize-schema: always
+# Swagger
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
 logging:
   level:
     sun.rmi: OFF
