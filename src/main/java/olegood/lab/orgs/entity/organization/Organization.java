@@ -1,4 +1,4 @@
-package olegood.lab.orgs.entity;
+package olegood.lab.orgs.entity.organization;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

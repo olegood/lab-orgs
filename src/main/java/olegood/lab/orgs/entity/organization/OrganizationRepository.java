@@ -1,4 +1,4 @@
-package olegood.lab.orgs.entity;
+package olegood.lab.orgs.entity.organization;
 
 import java.time.Instant;
 import org.springframework.data.domain.Page;

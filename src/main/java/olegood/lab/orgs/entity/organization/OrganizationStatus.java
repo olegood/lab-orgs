@@ -1,4 +1,4 @@
-package olegood.lab.orgs.entity;
+package olegood.lab.orgs.entity.organization;
 
 public enum OrganizationStatus {
 
